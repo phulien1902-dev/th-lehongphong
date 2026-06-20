@@ -64,16 +64,25 @@ header p{
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 0 15px #ddd;
-    transition:0.3s;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+transition:0.4s;
+
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 25px gray;
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
 }
 
 button{

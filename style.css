@@ -94,17 +94,29 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 button{
-    background:#2196F3;
-    color:white;
-    padding:14px 25px;
-    font-size:16px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
+
+background:#ff5722;
+
+color:white;
+
+padding:15px 25px;
+
+font-size:17px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:0.3s;
+
 }
 
 button:hover{
-    background:#1565c0;
+
+background:#e64a19;
+
 }
 
 footer{

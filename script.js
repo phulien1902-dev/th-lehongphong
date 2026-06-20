@@ -1,23 +1,27 @@
-const searchBox=document.getElementById("searchBox");
+const searchBox = document.getElementById("searchBox");
 
-if(searchBox){
+if (searchBox) {
 
-searchBox.addEventListener("keyup",function(){
+    searchBox.addEventListener("keyup", function () {
 
-let value=this.value.toLowerCase();
+        let value = this.value.toLowerCase();
 
-let cards=document.querySelectorAll(".card");
+        let cards = document.querySelectorAll(".card");
 
-cards.forEach(card=>{
+        cards.forEach(card => {
 
-if(card.innerText.toLowerCase().includes(value))
-card.style.display="block";
+            if (card.innerText.toLowerCase().includes(value)) {
 
-else
-card.style.display="none";
+                card.style.display = "block";
 
-});
+            } else {
 
-});
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
 
 }

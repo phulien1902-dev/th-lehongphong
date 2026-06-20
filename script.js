@@ -1,5 +1,7 @@
 const searchBox=document.getElementById("searchBox");
 
+if(searchBox){
+
 searchBox.addEventListener("keyup",function(){
 
 let value=this.value.toLowerCase();
@@ -17,3 +19,5 @@ card.style.display="none";
 });
 
 });
+
+}

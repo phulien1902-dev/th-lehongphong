@@ -2,19 +2,26 @@ window.onload = function () {
 
     const searchBox = document.getElementById("searchBox");
 
-    if (!searchBox) return;
+    if (!searchBox) {
+        alert("Không tìm thấy searchBox!");
+        return;
+    }
+
+    alert("Search đã được kích hoạt!");
 
     searchBox.addEventListener("input", function () {
 
-        let value = this.value.toLowerCase();
+        let keyword = this.value.toLowerCase();
 
-        document.querySelectorAll(".card").forEach(card => {
+        let cards = document.querySelectorAll(".card");
 
-            if (card.innerText.toLowerCase().includes(value)) {
+        cards.forEach(function(card){
+
+            if(card.innerText.toLowerCase().includes(keyword)){
 
                 card.style.display = "";
 
-            } else {
+            }else{
 
                 card.style.display = "none";
 

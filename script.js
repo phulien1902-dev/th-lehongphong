@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     // SEARCH
     const searchBox = document.getElementById("searchBox");
@@ -30,7 +30,6 @@ window.onload = function () {
     }
 
     // DARK MODE
-
     const darkModeBtn = document.getElementById("darkModeBtn");
 
     if (darkModeBtn) {
@@ -43,4 +42,4 @@ window.onload = function () {
 
     }
 
-};
+});

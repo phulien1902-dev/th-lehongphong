@@ -201,3 +201,11 @@ body.dark-mode p,
 body.dark-mode h2{
     color:white !important;
 }
+/* ĐỒNG HỒ */
+
+#clock{
+    font-size:22px;
+    margin:20px 0;
+    color:white;
+    font-weight:bold;
+}

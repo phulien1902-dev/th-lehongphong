@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.body.classList.toggle("dark-mode");
 
-            alert(document.body.className);
+            
 
         });
 

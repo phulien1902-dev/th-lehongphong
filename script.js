@@ -1,18 +1,18 @@
-const searchBox = document.getElementById("searchBox");
+window.onload = function () {
 
-if (searchBox) {
+    const searchBox = document.getElementById("searchBox");
 
-    searchBox.addEventListener("keyup", function () {
+    if (!searchBox) return;
+
+    searchBox.addEventListener("input", function () {
 
         let value = this.value.toLowerCase();
 
-        let cards = document.querySelectorAll(".card");
-
-        cards.forEach(card => {
+        document.querySelectorAll(".card").forEach(card => {
 
             if (card.innerText.toLowerCase().includes(value)) {
 
-                card.style.display = "block";
+                card.style.display = "";
 
             } else {
 
@@ -24,4 +24,4 @@ if (searchBox) {
 
     });
 
-}
+};

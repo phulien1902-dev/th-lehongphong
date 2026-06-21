@@ -2,12 +2,10 @@ window.onload = function () {
 
     const searchBox = document.getElementById("searchBox");
 
+    // Nếu trang không có ô tìm kiếm thì không làm gì cả
     if (!searchBox) {
-        alert("Không tìm thấy searchBox!");
         return;
     }
-
-    alert("Search đã được kích hoạt!");
 
     searchBox.addEventListener("input", function () {
 
@@ -15,13 +13,13 @@ window.onload = function () {
 
         let cards = document.querySelectorAll(".card");
 
-        cards.forEach(function(card){
+        cards.forEach(function (card) {
 
-            if(card.innerText.toLowerCase().includes(keyword)){
+            if (card.innerText.toLowerCase().includes(keyword)) {
 
                 card.style.display = "";
 
-            }else{
+            } else {
 
                 card.style.display = "none";
 

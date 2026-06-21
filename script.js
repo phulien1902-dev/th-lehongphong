@@ -34,3 +34,21 @@ function updateClock(){
 setInterval(updateClock,1000);
 
 updateClock();
+// BỘ ĐẾM TRUY CẬP
+
+let count = localStorage.getItem("visitorCount");
+
+if (count == null) {
+
+    count = 1;
+
+} else {
+
+    count = parseInt(count) + 1;
+
+}
+
+localStorage.setItem("visitorCount", count);
+
+document.getElementById("visitorCount").innerHTML =
+"👁️ Lượt truy cập: " + count;

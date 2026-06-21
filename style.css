@@ -209,3 +209,45 @@ body.dark-mode h2{
     color:white;
     font-weight:bold;
 }
+/* HOT - NEW */
+
+.tag{
+display:inline-block;
+padding:8px 15px;
+border-radius:20px;
+color:white;
+font-size:14px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.hot{
+background:#ff5722;
+}
+
+.new{
+background:#4caf50;
+}
+
+/* ĐÁNH GIÁ */
+
+.rating{
+font-size:18px;
+margin:10px 0;
+}
+
+/* NHÓM NÚT */
+
+.button-group{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.download-btn{
+background:#2196f3;
+}
+
+.download-btn:hover{
+background:#1976d2;
+}

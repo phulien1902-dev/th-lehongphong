@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         darkModeBtn.addEventListener("click", function () {
 
-            alert("Đã bấm nút Chế độ tối");
+            document.body.classList.toggle("dark-mode");
+
+            alert(document.body.className);
 
         });
 

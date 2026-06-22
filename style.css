@@ -800,3 +800,27 @@ z-index:9999;
 transition:0.1s;
 
 }
+/* PARTICLES BACKGROUND */
+
+#particles-js{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+z-index:-1;
+
+background:linear-gradient(
+135deg,
+#0d47a1,
+#1565c0,
+#00acc1
+);
+
+}

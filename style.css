@@ -363,3 +363,72 @@ transform:translateY(0px);
 }
 
 }
+/* HOT - NEW */
+
+.tag{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border-radius:20px;
+
+font-size:14px;
+
+font-weight:bold;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+.hot{
+
+background:#ff5722;
+
+}
+
+.new{
+
+background:#4caf50;
+
+}
+
+/* ĐÁNH GIÁ */
+
+.rating{
+
+margin:15px 0;
+
+font-size:18px;
+
+color:#ff9800;
+
+font-weight:bold;
+
+}
+
+/* NHÓM NÚT */
+
+.button-group{
+
+display:flex;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.download-btn{
+
+background:#2196f3;
+
+}
+
+.download-btn:hover{
+
+background:#1565c0;
+
+}

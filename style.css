@@ -535,3 +535,74 @@ background:#2c2c2c;
 color:white;
 
 }
+/* SMART DASHBOARD */
+
+.smart-dashboard{
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.smart-dashboard h2{
+
+color:#0d47a1;
+
+margin-bottom:30px;
+
+}
+
+.smart-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+}
+
+.smart-box{
+
+width:220px;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+transition:0.4s;
+
+}
+
+.smart-box:hover{
+
+transform:translateY(-10px);
+
+background:#1565c0;
+
+color:white;
+
+}
+
+.smart-box h3{
+
+font-size:22px;
+
+margin-bottom:15px;
+
+}
+
+.smart-box p{
+
+font-size:35px;
+
+font-weight:bold;
+
+}

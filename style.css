@@ -714,34 +714,34 @@ transform:translateY(-5px);
 }
 /* THANH THÔNG BÁO */
 
+/* THANH THÔNG BÁO */
+
 .marquee{
-
-background:#ff5722;
-
-color:white;
-
-overflow:hidden;
-
-white-space:nowrap;
-
-padding:10px 0;
-
+    background:#ff5722;
+    color:white;
+    overflow:hidden;
+    white-space:nowrap;
+    padding:10px 0;
+    position:relative;
 }
 
 .marquee-content{
-
-display:inline-block;
-
-padding-left:100%;
-
-animation:marquee 20s linear infinite;
-
-font-weight:bold;
-
-font-size:18px;
-
+    display:inline-block;
+    white-space:nowrap;
+    padding-left:100%;
+    font-size:18px;
+    font-weight:bold;
+    animation:marquee 15s linear infinite;
 }
 
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-200%);
+    }
+}
 @keyframes marquee{
 
 0%{

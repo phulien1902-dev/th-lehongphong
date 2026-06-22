@@ -198,3 +198,22 @@ particlesJS("particles-js", {
   }
 
 });
+// POPUP CHÀO MỪNG
+
+window.addEventListener("load", function(){
+
+    const popup = document.getElementById("welcomePopup");
+
+    const closeBtn = document.getElementById("closePopup");
+
+    if (popup && closeBtn){
+
+        closeBtn.addEventListener("click", function(){
+
+            popup.style.display = "none";
+
+        });
+
+    }
+
+});

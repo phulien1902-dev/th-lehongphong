@@ -129,3 +129,21 @@ topBtn.addEventListener("click", function(){
     });
 
 });
+// THANH TIẾN TRÌNH CUỘN TRANG
+
+window.addEventListener("scroll", function () {
+
+    let scrollTop =
+        document.documentElement.scrollTop;
+
+    let scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    let progress =
+        (scrollTop / scrollHeight) * 100;
+
+    document.getElementById("progressBar").style.width =
+        progress + "%";
+
+});

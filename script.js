@@ -219,57 +219,82 @@ window.addEventListener("load", function(){
 });
 // SLIDER
 
-// ===== SLIDER =====
+// =====================
+// SLIDER
+// =====================
 
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+document.addEventListener("DOMContentLoaded", function(){
 
-let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
 
-if (slides.length > 0) {
+    const dots = document.querySelectorAll(".dot");
 
-    function showSlide(index) {
+    const nextBtn = document.querySelector(".next");
 
-        slides.forEach(slide => {
-            slide.classList.remove("active");
-        });
+    const prevBtn = document.querySelector(".prev");
 
-        slides[index].classList.add("active");
-    }
+    let currentSlide = 0;
 
-    function nextSlide() {
+    if(slides.length > 0){
 
-        currentSlide++;
+        function showSlide(index){
 
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
+            slides.forEach(slide=>{
+                slide.classList.remove("active");
+            });
+
+            dots.forEach(dot=>{
+                dot.classList.remove("active-dot");
+            });
+
+            slides[index].classList.add("active");
+
+            dots[index].classList.add("active-dot");
+
         }
 
-        showSlide(currentSlide);
-    }
+        function nextSlide(){
 
-    function prevSlide() {
+            currentSlide++;
 
-        currentSlide--;
+            if(currentSlide >= slides.length){
 
-        if (currentSlide < 0) {
-            currentSlide = slides.length - 1;
+                currentSlide = 0;
+
+            }
+
+            showSlide(currentSlide);
+
         }
 
-        showSlide(currentSlide);
+        function prevSlide(){
+
+            currentSlide--;
+
+            if(currentSlide < 0){
+
+                currentSlide = slides.length - 1;
+
+            }
+
+            showSlide(currentSlide);
+
+        }
+
+        setInterval(nextSlide,4000);
+
+        if(nextBtn){
+
+            nextBtn.addEventListener("click",nextSlide);
+
+        }
+
+        if(prevBtn){
+
+            prevBtn.addEventListener("click",prevSlide);
+
+        }
+
     }
 
-    // tự chạy 4 giây
-    setInterval(nextSlide, 4000);
-
-    // nút trái phải
-    if (nextBtn) {
-        nextBtn.addEventListener("click", nextSlide);
-    }
-
-    if (prevBtn) {
-        prevBtn.addEventListener("click", prevSlide);
-    }
-
-}
+});

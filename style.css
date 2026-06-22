@@ -1,7 +1,21 @@
 body{
-    margin:0;
-    background:#f4f6f9;
-    font-family:Arial,sans-serif;
+
+margin:0;
+
+font-family:Arial,sans-serif;
+
+background:linear-gradient(
+-45deg,
+#0d47a1,
+#1565c0,
+#00acc1,
+#42a5f5
+);
+
+background-size:400% 400%;
+
+animation:gradientBG 15s ease infinite;
+
 }
 
 /* MENU */

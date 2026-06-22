@@ -775,4 +775,28 @@ transform:translateX(-50%);
 }
 
 }
+/* THANH TIẾN TRÌNH CUỘN TRANG */
 
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0%;
+
+height:6px;
+
+background:linear-gradient(
+90deg,
+#ff9800,
+#ff5722
+);
+
+z-index:9999;
+
+transition:0.1s;
+
+}

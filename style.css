@@ -1106,3 +1106,32 @@ padding:18px 35px;
 border-radius:40px;
 
 }
+@media screen and (max-width:768px){
+
+.hero-slider{
+
+height:450px;
+
+}
+
+.hero-overlay{
+
+width:85%;
+
+padding:25px;
+
+}
+
+.hero-overlay h1{
+
+font-size:32px;
+
+}
+
+.hero-overlay h2{
+
+font-size:18px;
+
+}
+
+}

@@ -712,3 +712,20 @@ background:#e64a19;
 transform:translateY(-5px);
 
 }
+/* THANH THÔNG BÁO */
+
+.marquee{
+
+background:#ff5722;
+
+color:white;
+
+padding:10px 0;
+
+font-size:18px;
+
+font-weight:bold;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+
+}

@@ -714,42 +714,46 @@ transform:translateY(-5px);
 }
 /* THANH THÔNG BÁO */
 
-/* THANH THÔNG BÁO */
+/* =====================
+   THANH THÔNG BÁO
+===================== */
 
 .marquee{
-    background:#ff5722;
-    color:white;
-    overflow:hidden;
-    white-space:nowrap;
-    padding:10px 0;
+
+background:#ff5722;
+
+color:white;
+
+overflow:hidden;
+
+white-space:nowrap;
+
+padding:10px 0;
+
+font-size:18px;
+
+font-weight:bold;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+
 }
 
-.marquee-content{
-    display:inline-block;
-    white-space:nowrap;
-    font-size:18px;
-    font-weight:bold;
-    padding-left:100%;
-    animation: marquee 15s linear infinite;
+.marquee-track{
+
+display:flex;
+
+width:max-content;
+
+animation:marquee 25s linear infinite;
+
 }
 
-@keyframes marquee{
-    0%{
-        transform: translateX(0);
-    }
+.marquee-track span{
 
-    100%{
-        transform: translateX(-200%);
-    }
+padding-right:100px;
+
 }
-@keyframes marquee{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-200%);
-    }
-}
+
 @keyframes marquee{
 
 0%{
@@ -760,7 +764,7 @@ transform:translateX(0);
 
 100%{
 
-transform:translateX(-100%);
+transform:translateX(-50%);
 
 }
 

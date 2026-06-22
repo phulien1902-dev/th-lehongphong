@@ -47,3 +47,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+// TỔNG SỐ ỨNG DỤNG
+
+let totalApps = document.querySelectorAll(".card").length;
+
+let totalAppsBox = document.getElementById("totalApps");
+
+if (totalAppsBox){
+
+    totalAppsBox.innerHTML = totalApps;
+
+}
+
+
+// NGÀY HÔM NAY
+
+let todayBox = document.getElementById("todayDate");
+
+if (todayBox){
+
+    let today = new Date();
+
+    todayBox.innerHTML = today.toLocaleDateString('vi-VN');
+
+}
+
+
+// LƯỢT TRUY CẬP
+
+let visitorCountBox = document.getElementById("visitorCountBox");
+
+if (visitorCountBox){
+
+    visitorCountBox.innerHTML = localStorage.getItem("visitorCount");
+
+}

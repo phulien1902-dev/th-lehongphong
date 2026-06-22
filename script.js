@@ -298,3 +298,32 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 });
+// HERO SLIDER
+
+const heroSlides = document.querySelectorAll(".hero-slide");
+
+let heroIndex = 0;
+
+if(heroSlides.length > 0){
+
+    setInterval(function(){
+
+        heroSlides.forEach(slide => {
+
+            slide.classList.remove("active");
+
+        });
+
+        heroIndex++;
+
+        if(heroIndex >= heroSlides.length){
+
+            heroIndex = 0;
+
+        }
+
+        heroSlides[heroIndex].classList.add("active");
+
+    },4000);
+
+}

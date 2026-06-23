@@ -327,3 +327,22 @@ if(heroSlides.length > 0){
     },4000);
 
 }
+// MENU SCROLL
+
+window.addEventListener("scroll", function(){
+
+    const nav = document.querySelector("nav");
+
+    if(window.scrollY > 100){
+
+        nav.style.background = "rgba(0,0,0,.4)";
+
+    }
+
+    else{
+
+        nav.style.background = "rgba(255,255,255,.08)";
+
+    }
+
+});

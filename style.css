@@ -1983,3 +1983,24 @@ text-shadow:
 }
 
 }
+@media screen and (max-width:768px){
+
+.logo{
+
+font-size:22px;
+
+display:block;
+
+margin-bottom:15px;
+
+}
+
+nav a{
+
+display:block;
+
+margin:12px 0;
+
+}
+
+}

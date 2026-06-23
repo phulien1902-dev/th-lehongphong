@@ -57,7 +57,7 @@ nav a:hover{
 /* BANNER */
 
 header{
-
+margin-top:80px;
 background:linear-gradient(
 135deg,
 #0d47a1,
@@ -1911,5 +1911,32 @@ box-shadow:0 5px 20px rgba(0,0,0,.2);
 z-index:9999;
 
 transition:.4s;
+
+}
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 20px;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+nav a:hover{
+
+color:#00e5ff;
+
+text-shadow:
+
+0 0 10px #00e5ff,
+
+0 0 20px #00e5ff;
 
 }

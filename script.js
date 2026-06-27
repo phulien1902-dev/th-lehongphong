@@ -146,8 +146,23 @@ window.addEventListener("scroll", function () {
     let progress =
         (scrollTop / scrollHeight) * 100;
 
-    document.getElementById("progressBar").style.width =
-        progress + "%";
+    const progressBar = document.getElementById("progressBar");
+
+if(progressBar){
+
+    window.addEventListener("scroll", function(){
+
+        let scrollTop=document.documentElement.scrollTop;
+
+        let scrollHeight=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+        let progress=(scrollTop/scrollHeight)*100;
+
+        progressBar.style.width=progress+"%";
+
+    });
+
+}
 
 });
 // PARTICLES

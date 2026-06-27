@@ -167,7 +167,16 @@ if(progressBar){
 });
 // PARTICLES
 
-particlesJS("particles-js", {
+if (typeof particlesJS !== "undefined" &&
+    document.getElementById("particles-js")) {
+
+    particlesJS("particles-js", {
+
+        // giữ nguyên phần cấu hình
+
+    });
+
+}
 
   particles: {
 

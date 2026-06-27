@@ -84,7 +84,7 @@ if (visitorCountBox){
 }
 // MENU ĐIỆN THOẠI
 
-const menuToggle = document.getElementById("menuToggle");
+const menuToggle = document.getElementById("menu-toggle");
 
 const menu = document.getElementById("menu");
 
@@ -101,34 +101,37 @@ if (menuToggle){
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", function(){
+if(topBtn){
 
-    if (window.scrollY > 300){
+    window.addEventListener("scroll", function(){
 
-        topBtn.style.display = "block";
+        if(window.scrollY > 300){
 
-    }
+            topBtn.style.display="block";
 
-    else{
+        }else{
 
-        topBtn.style.display = "none";
+            topBtn.style.display="none";
 
-    }
-
-});
-
-
-topBtn.addEventListener("click", function(){
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
+        }
 
     });
 
-});
+    topBtn.addEventListener("click", function(){
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
+
+
 // THANH TIẾN TRÌNH CUỘN TRANG
 
 window.addEventListener("scroll", function () {
@@ -346,3 +349,32 @@ window.addEventListener("scroll", function(){
     }
 
 });
+/* MENU MOBILE */
+
+#menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    #menu-toggle{
+        display:block;
+        width:100%;
+        padding:15px;
+        background:#0d47a1;
+        color:white;
+        border:none;
+        font-size:18px;
+        cursor:pointer;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+}

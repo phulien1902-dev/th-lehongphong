@@ -2071,3 +2071,16 @@ text-shadow:
     }
 
 }
+@media screen and (max-width:768px){
+
+    header{
+
+        padding-top:170px;
+
+        padding-bottom:80px;
+
+        min-height:60vh;
+
+    }
+
+}

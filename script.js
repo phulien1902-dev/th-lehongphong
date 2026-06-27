@@ -349,32 +349,3 @@ window.addEventListener("scroll", function(){
     }
 
 });
-/* MENU MOBILE */
-
-#menu-toggle{
-    display:none;
-}
-
-@media (max-width:768px){
-
-    #menu-toggle{
-        display:block;
-        width:100%;
-        padding:15px;
-        background:#0d47a1;
-        color:white;
-        border:none;
-        font-size:18px;
-        cursor:pointer;
-    }
-
-    nav{
-        display:none;
-        flex-direction:column;
-    }
-
-    nav.show{
-        display:flex;
-    }
-
-}

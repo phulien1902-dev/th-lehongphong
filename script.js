@@ -82,20 +82,21 @@ if (visitorCountBox){
     visitorCountBox.innerHTML = localStorage.getItem("visitorCount");
 
 }
-// MENU ĐIỆN THOẠI
+// MENU MOBILE
 
-const menuToggle = document.getElementById("menu-toggle");
+const menuBtn=document.getElementById("menuToggle");
 
-const menu = document.getElementById("menu");
+const menu=document.getElementById("menu");
 
-if (menuToggle){
+if(menuBtn&&menu){
 
-    menuToggle.addEventListener("click", function(){
+menuBtn.onclick=function(){
 
-        menu.classList.toggle("show");
+menu.classList.toggle("show");
 
-    });
+};
 
+}
 }
 // NÚT LÊN ĐẦU TRANG
 

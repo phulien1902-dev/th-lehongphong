@@ -88,13 +88,11 @@ const menuBtn=document.getElementById("menuToggle");
 
 const menu=document.getElementById("menu");
 
-if(menuBtn&&menu){
+if (menuBtn && menu) {
 
-menuBtn.onclick=function(){
-
-menu.classList.toggle("show");
-
-};
+    menuBtn.onclick = function () {
+        menu.classList.toggle("show");
+    };
 
 }
 

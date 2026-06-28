@@ -97,7 +97,7 @@ menu.classList.toggle("show");
 };
 
 }
-}
+
 // NÚT LÊN ĐẦU TRANG
 
 const topBtn = document.getElementById("topBtn");

@@ -166,64 +166,7 @@ if(progressBar){
 });
 // PARTICLES
 
-if (typeof particlesJS !== "undefined" &&
-    document.getElementById("particles-js")) {
 
-    particlesJS("particles-js", {
-
-        // giữ nguyên phần cấu hình
-
-    });
-
-}
-
-  particles: {
-
-    number: {
-      value: 80
-    },
-
-    color: {
-      value: "#ffffff"
-    },
-
-    shape: {
-      type: "circle"
-    },
-
-    opacity: {
-      value: 0.3
-    },
-
-    size: {
-      value: 3
-    },
-
-    line_linked: {
-
-      enable: true,
-
-      distance: 150,
-
-      color: "#ffffff",
-
-      opacity: 0.2,
-
-      width: 1
-
-    },
-
-    move: {
-
-      enable: true,
-
-      speed: 2
-
-    }
-
-  }
-
-});
 // POPUP CHÀO MỪNG
 
 window.addEventListener("load", function(){

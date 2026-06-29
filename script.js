@@ -84,18 +84,6 @@ if (visitorCountBox){
 }
 // MENU MOBILE
 
-const menuBtn=document.getElementById("menuToggle");
-
-const menu=document.getElementById("menu");
-
-if (menuBtn && menu) {
-
-    menuBtn.onclick = function () {
-        menu.classList.toggle("show");
-    };
-
-}
-
 // NÚT LÊN ĐẦU TRANG
 
 const topBtn = document.getElementById("topBtn");

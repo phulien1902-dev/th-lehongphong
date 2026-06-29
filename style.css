@@ -37,25 +37,15 @@ background-position:0% 50%;
 /* ================= MENU ================= */
 
 .menu-toggle{
-
-display:none;
-
-width:100%;
-
-padding:15px;
-
-background:#0d47a1;
-
-color:#fff;
-
-font-size:22px;
-
-border:none;
-
-cursor:pointer;
-
-font-weight:bold;
-
+    display:block !important;
+    width:100%;
+    padding:15px;
+    background:#0d47a1;
+    color:#fff;
+    font-size:22px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
 }
 
 nav{

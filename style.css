@@ -84,11 +84,30 @@ color:yellow;
 
 /* MOBILE */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.menu-toggle{
+    .menu-toggle{
+        display:block;
+    }
 
-display:block;
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        display:block;
+        width:100%;
+        padding:15px;
+        text-align:center;
+        margin:0;
+        border-top:1px solid rgba(255,255,255,.2);
+    }
 
 }
 

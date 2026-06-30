@@ -96,6 +96,18 @@ color:yellow;
         width:100%;
     }
 
+    @media screen and (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+    }
+
     nav.show{
         display:flex;
     }
@@ -108,34 +120,6 @@ color:yellow;
         margin:0;
         border-top:1px solid rgba(255,255,255,.2);
     }
-
-}
-
-nav{
-
-display:none;
-
-flex-direction:column;
-
-align-items:center;
-
-padding:20px;
-
-}
-
-nav.show{
-
-display:flex;
-
-}
-
-nav a{
-
-margin:10px 0;
-
-font-size:22px;
-
-}
 
 }
 /* BANNER */

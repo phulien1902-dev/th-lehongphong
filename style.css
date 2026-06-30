@@ -1,124 +1,241 @@
+/*==================================================
+    VQTIEN TOOLS V2
+    PHẦN 1
+    RESET + BODY + MENU + HEADER
+==================================================*/
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
-margin:0;
+    font-family:Arial, Helvetica, sans-serif;
 
-font-family:Arial,sans-serif;
+    background:#f4f7fb;
 
-background:linear-gradient(
--45deg,
-#0d47a1,
-#1565c0,
-#00acc1,
-#42a5f5
-);
+    color:#333;
 
-background-size:400% 400%;
+    overflow-x:hidden;
 
-animation:gradientBG 15s ease infinite;
-@keyframes gradientBG{
-
-0%{
-background-position:0% 50%;
-}
-
-50%{
-background-position:100% 50%;
-}
-
-100%{
-background-position:0% 50%;
-}
+    line-height:1.6;
 
 }
+
+/* LINK */
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* IMAGE */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/*==================================================
+                    MENU
+==================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    background:#0d47a1;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
 
 /* MENU */
 
-/* ================= MENU ================= */
-
-.menu-toggle{
-    display:block !important;
-    width:100%;
-    padding:15px;
-    background:#0d47a1;
-    color:#fff;
-    font-size:22px;
-    border:none;
-    cursor:pointer;
-    font-weight:bold;
-}
-
 nav{
 
-background:#0d47a1;
+    background:#0d47a1;
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-gap:25px;
+    gap:25px;
 
-padding:15px;
+    padding:16px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
 
 }
+
+/* LOGO */
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-right:30px;
+
+}
+
+/* LINK */
 
 nav a{
 
-color:white;
+    color:white;
 
-text-decoration:none;
+    font-size:18px;
 
-font-size:18px;
+    font-weight:bold;
 
-font-weight:bold;
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-color:yellow;
+    color:#ffe600;
 
 }
 
-/* MOBILE */
+/*==================================================
+                    HEADER
+==================================================*/
 
-@media (max-width:768px){
+header{
+
+    background:linear-gradient(135deg,#1976d2,#42a5f5);
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+header h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+header p{
+
+    font-size:22px;
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+            MOBILE
+==================================================*/
+
+@media(max-width:768px){
 
     .menu-toggle{
+
         display:block;
+
     }
 
     nav{
+
         display:none;
+
         flex-direction:column;
+
+        align-items:center;
+
+        gap:0;
+
         width:100%;
-    }
 
-    @media screen and (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    nav{
-        display:none;
-        flex-direction:column;
-        width:100%;
     }
 
     nav.show{
+
         display:flex;
+
     }
 
     nav a{
+
         display:block;
+
         width:100%;
+
         padding:15px;
+
         text-align:center;
-        margin:0;
+
         border-top:1px solid rgba(255,255,255,.2);
+
+    }
+
+    .logo{
+
+        margin:15px 0;
+
+    }
+
+    header{
+
+        padding:60px 20px;
+
+    }
+
+    header h1{
+
+        font-size:32px;
+
+    }
+
+    header p{
+
+        font-size:18px;
+
     }
 
 }
